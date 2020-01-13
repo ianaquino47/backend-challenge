@@ -6,7 +6,7 @@ Welcome! This coding challenge is designed to explore your backend skills. You w
 ### The challenge
 The developers at ASD corporation have built a new API. However the developers have forgotten to implement any request validation. 
 
-The developers would like you to write a middleware function that checks all incoming requests against the a set of predefined rules to ensure that the appropriate parameters have been supplied. The developers would prefer if you avoid installing additional packages, unless it is absolutely necessary. 
+The developers would like you to write a middleware function that checks all incoming requests against a set of predefined rules to ensure that the appropriate parameters have been supplied. The developers would prefer if you avoid installing additional packages, unless it is absolutely necessary. 
 
 You will need to write some code to: 
 1. Read the JSON file - `rules.json`
