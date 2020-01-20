@@ -32,7 +32,7 @@ describe("checkAgainstRules", () => {
         });
 
         
-        it("PUT returns status code 200 when expected parameter given", function(done) {
+        it("PUT returns status code 200 when accepted parameter given", function(done) {
             request({
                 url: base_url + "api/account/profile",
                 method: "PUT",
@@ -45,7 +45,7 @@ describe("checkAgainstRules", () => {
             });
         });
 
-        it("PUT returns status code 200 when multiple (expected) parameters given", function(done) {
+        it("PUT returns status code 200 when multiple (accepted) parameters given", function(done) {
             request({
                 url: base_url + "api/account/profile",
                 method: "PUT",
@@ -155,21 +155,21 @@ describe("checkAgainstRules", () => {
             });
         });
 
-        it("GET returns status code 200 if expected parameter given (integer)", function(done) {
+        it("GET returns status code 200 if accepted parameter given (integer)", function(done) {
             request.get((base_url + "api/account/search/?page=25" ), function(error, response, body) {
                 assert.equal(200, response.statusCode);
                 done();
             });
         });
 
-        it("GET returns status code 200 if expected parameter given (array)", function(done) {
+        it("GET returns status code 200 if accepted parameter given (array)", function(done) {
             request.get((base_url + "api/account/search?skill[]=137792" ), function(error, response, body) {
                 assert.equal(200, response.statusCode);
                 done();
             });
         });
 
-        it("GET returns status code 200 if expected parameter given (string)", function(done) {
+        it("GET returns status code 200 if accepted parameter given (string)", function(done) {
             request.get((base_url + "api/account/search?remote=hello" ), function(error, response, body) {
                 assert.equal(200, response.statusCode);
                 done();
